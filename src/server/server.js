@@ -15,7 +15,10 @@ let port = process.env.PORT || "4200";
 let app = express();
 
 //listen to requests
-app.listen(port, console.log(`API Server Started at -${port}`));
+app.listen(
+  port,
+  console.log(`API Server Started at -${port},${process.env.NODE_ENV}`)
+);
 
 //set body parser (url encoded) and cors
 app.use(cors(), bodyParser.urlencoded({ extended: true }), bodyParser.json());
