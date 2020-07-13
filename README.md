@@ -1,6 +1,6 @@
 # Exercise App
 
-\_\_ What's in it for me ? :metal:
+### What's in it for me ? :metal:
 
 > This app has been created using React,Express and yes mongodb as persistance manager
 > Material UI takes care of the design part
