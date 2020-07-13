@@ -1,7 +1,7 @@
 const { muscles, exercises } = require("../redux/defaultStore.js");
 const connectDb = require("./connect-db.js");
 
-async function initializedb() {
+module.exports = async function initializedb() {
   let db = await connectDb();
 
   //find the muscles collection if not found create new collections
@@ -16,5 +16,5 @@ async function initializedb() {
     let exercisesCollection = db.collection("exercises");
     await exercisesCollection.insertMany(exercises);
   }
-}
-initializedb();
+};
+//initializedb();

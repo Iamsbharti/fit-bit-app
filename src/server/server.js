@@ -7,7 +7,8 @@ const exercisesRoute = require("./exercisesRoute.js");
 const createExerciseRoute = require("./createExerciseRoute.js");
 const deleteExerciseRoute = require("./deleteExerciseRoute.js");
 const updateExerciseRoute = require("./updateExerciseRoute.js");
-
+const connectDb = require("./connect-db.js");
+const initializedb = require("./initialize-db");
 //initialize a port
 let port = process.env.PORT || "4200";
 
@@ -28,6 +29,9 @@ app.use(cors(), bodyParser.urlencoded({ extended: true }), bodyParser.json());
   console.log(req.body);
   res.send("Get works");
 });*/
+//connect and init db
+connectDb().then(initializedb);
+
 //get muscles route
 getMusclesRoute(app);
 
