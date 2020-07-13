@@ -7,4 +7,12 @@
 > You can categorize exercises based on body parts
 > You can modify the contents for each of the section
 
-[Live At](https://fit-bit-app.herokuapp.com/)
+## Run on LocalHost
+
+- Clone the [repo](https://github.com/Iamsbharti/fit-bit-app.git)
+- Run npm install
+- Run npm run dev
+- App will be launched at http://localhost:8080
+- API server will run at port::4200
+
+[Live Here](https://fit-bit-app.herokuapp.com/)
