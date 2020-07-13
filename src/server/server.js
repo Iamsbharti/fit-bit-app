@@ -10,7 +10,7 @@ const updateExerciseRoute = require("./updateExerciseRoute.js");
 //initialize a port
 let port = process.env.PORT || "4200";
 
-//initialize the express app
+//initialize the express app dd
 let app = express();
 
 //listen to requests
