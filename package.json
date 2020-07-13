@@ -60,7 +60,7 @@
     "eject": "react-scripts eject",
     "dev": "run-p start start:dev",
     "start:dev": "webpack-dev-server --config webpack.config.js",
-    "start": "npm run server",
+    "start": "npm run server && npm run init",
     "build": "webpack --config webpack.config.js",
     "heroku-postbuild": "npm run build",
     "server": "nodemon src/server/server",

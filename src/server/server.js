@@ -24,10 +24,10 @@ app.listen(
 app.use(cors(), bodyParser.urlencoded({ extended: true }), bodyParser.json());
 
 //test api path
-app.get("/", async (req, res) => {
+/*app.get("/", async (req, res) => {
   console.log(req.body);
   res.send("Get works");
-});
+});*/
 //get muscles route
 getMusclesRoute(app);
 
