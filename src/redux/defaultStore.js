@@ -1,4 +1,4 @@
-export const muscles = [
+const muscles = [
   { id: 1, name: "shoulders" },
   { id: 2, name: "chest" },
   { id: 3, name: "arms" },
@@ -6,7 +6,7 @@ export const muscles = [
   { id: 5, name: "legs" },
 ];
 
-export const exercises = [
+const exercises = [
   {
     id: "1",
     title: "Overhead Press",
@@ -50,3 +50,7 @@ export const exercises = [
     muscles: "legs",
   },
 ];
+module.exports = {
+  muscles: muscles,
+  exercises: exercises,
+};
