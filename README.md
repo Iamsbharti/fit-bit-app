@@ -1,4 +1,4 @@
-#Exercise App
+# Exercise App
 
 \_\_What's in it for me ? :metal:
 
