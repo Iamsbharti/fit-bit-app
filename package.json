@@ -60,7 +60,7 @@
     "eject": "react-scripts eject",
     "dev": "run-p start start:dev",
     "start:dev": "webpack-dev-server --config webpack.config.js",
-    "start": "npm run server ",
+    "start": "npm run server",
     "build": "webpack --config webpack.config.js",
     "server": "cross-env NODE_ENV=production nodemon src/server/server",
     "start-prod": "npm run build && cross-env NODE_ENV=production nodemon src/server/server"

@@ -7,6 +7,7 @@ const exercisesRoute = require("./exercisesRoute.js");
 const createExerciseRoute = require("./createExerciseRoute.js");
 const deleteExerciseRoute = require("./deleteExerciseRoute.js");
 const updateExerciseRoute = require("./updateExerciseRoute.js");
+
 //initialize a port
 let port = process.env.PORT || "4200";
 
@@ -42,7 +43,7 @@ updateExerciseRoute(app);
 //production config--fixed
 if (process.env.NODE_ENV === "production") {
   console.log("prod");
-  app.use(express.static(path.resolve(__dirname, "../build")));
+  app.use(express.static(path.resolve(__dirname, "../../dist")));
   app.get("/*", (req, res) => {
     res.sendFile(path.resolve("index.html"));
   });
